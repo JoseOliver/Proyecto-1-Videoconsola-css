@@ -52,3 +52,26 @@ body{
     justify-content:center;      /* A */
     align-items: center;         /* A */
 }
+#cruceta{
+    position:relative;
+    width:5cm;
+    height:5cm;
+    top:25mm;
+    left:2cm;
+}
+#cruceta .horizontal{
+    position:relative;
+    width:60%;
+    height:20%;
+    top: -40%;
+    left: -20%;
+    background-color: black;
+}
+#cruceta .vertical{
+    position:relative;
+    width:20%;
+    height:60%;
+    top:0;
+    left:0;
+    background-color: black;
+}
