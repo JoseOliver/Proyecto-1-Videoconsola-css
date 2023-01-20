@@ -1,0 +1,54 @@
+body{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+#videoconsola{
+    display:flex;
+    width:950px;
+    height:430px;
+    background-color: darkgrey;
+    border-radius: 200px;
+}
+#vita{
+    position: relative;
+    top: 85mm;
+    left: 19mm;
+    width: 2cm;
+    height: 1cm;
+    border-radius: 50%;
+    background: lightblue;
+}
+#start{
+    /* pongo el texto del boton centrado: "A" */
+    /* hago la elipse: "B" */
+    /* lo alineo con precisión en la posición exacta: "C" */
+    position: relative;                         /* C */
+    display: flex;               /* A */
+    width: 10mm;                        /* B */ 
+    height: 5mm;                        /* B */
+    top:0;                                      /* C */
+    left:0;                                     /* C */
+    border-radius: 50%;                 /* B */
+    background: red;
+    color:black;
+    font-size:xx-small;                         /* C */
+    justify-content:center;      /* A */
+    align-items: center;         /* A */
+}
+#select{
+    position: relative;                         /* C */
+    display: flex;               /* A */
+    width: 10mm;                        /* B */ 
+    height: 5mm;                        /* B */
+    top:0;                                      /* C */
+    left:0;                                     /* C */
+    border-radius: 50%;                 /* B */
+    background: red;
+    color:black;
+    font-size:xx-small;                         /* C */
+    justify-content:center;      /* A */
+    align-items: center;         /* A */
+}
