@@ -6,7 +6,6 @@ body{
     align-items: center;
 }
 #videoconsola{
-    display:flex;
     width:950px;
     height:430px;
     background-color: darkgrey;
@@ -14,8 +13,9 @@ body{
 }
 #vita{
     position: relative;
-    top: 85mm;
-    left: 19mm;
+    float:left;
+    top: 0;
+    left: 0;
     width: 2cm;
     height: 1cm;
     border-radius: 50%;
@@ -54,10 +54,11 @@ body{
 }
 #cruceta{
     position:relative;
+    float:left;
     width:5cm;
     height:5cm;
-    top:25mm;
-    left:2cm;
+    top: 0;
+    left: 0;
 }
 #cruceta .horizontal{
     position:relative;
@@ -74,4 +75,63 @@ body{
     top:0;
     left:0;
     background-color: black;
+}
+#joyL{
+    position:relative;
+    float:left;
+    width:2cm;
+    height:2cm;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    background-color: black;
+}
+#joyR{
+    position:relative;
+    width:2cm;
+    height:2cm;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    background-color: black;
+}
+#pantalla{
+    position:relative;
+    /* display:none; */
+    width:17.5cm;
+    height:10cm;
+    top: 0;
+    left: 0;
+    background: linear-gradient(155deg,grey,black)
+}
+#botonera{
+    position:relative;
+    width:5cm;
+    height:5cm;
+    top:0;
+    left:0;
+}
+#botonera .boton{
+    width:10%;
+    height:10%;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#botonera .x{
+    font-size:18px;
+}
+#botonera .o{
+    font-size:13px;
+}
+#botonera .cuadrado{
+    font-size:13px;
+    margin-top:3px;
+}
+#botonera .triangulo{
+    font-size:16px;
 }
