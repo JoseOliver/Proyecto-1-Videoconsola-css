@@ -9,7 +9,7 @@ body{
     width:950px;
     height:430px;
     background-color: darkgrey;
-    border-radius: 200px;
+    border-radius: 195px;
 }
 #vita{
     position: relative;
@@ -54,10 +54,19 @@ body{
 #cruceta{
     position:relative;
     float:left;
-    width:5cm;
-    height:5cm;
-    top: 0;
-    left: 0;
+    width: 45mm;
+    height: 45mm;
+    top: -3mm;
+    left: 20mm;
+}
+#cruceta .fondo{
+    position:relative;
+    width: 3cm;
+    height: 3cm;
+    top: 117px;
+    left: -49px;
+    border: 10px solid grey;
+    border-radius: 50%;
 }
 #cruceta .horizontal{
     position:relative;
@@ -80,8 +89,8 @@ body{
     float:left;
     width:2cm;
     height:2cm;
-    top:0;
-    left:0;
+    top:7cm;
+    left:-24mm;
     border-radius: 50%;
     background-color: black;
 }
@@ -89,28 +98,28 @@ body{
     position:relative;
     width:2cm;
     height:2cm;
-    top:0;
-    left:0;
+    top: 7cm;
+    left: 21cm;
     border-radius: 50%;
     background-color: black;
 }
 #pantalla{
     position:relative;
-    /* display:none; */
-    width:17.5cm;
-    height:10cm;
-    top: 0;
-    left: 0;
+    width: 16cm;
+    height: 10cm;
+    top: -8.3cm;
+    left: 4.5cm;
     background: linear-gradient(155deg,grey,black)
 }
 #botonera{
     position:relative;
-    width:5cm;
-    height:5cm;
-    top:0;
-    left:0;
+    width: 5cm;
+    height: 5cm;
+    top: -24mm;
+    left: 224mm;
 }
 #botonera .boton{
+    position:relative;
     width:10%;
     height:10%;
     top:0;
@@ -121,16 +130,47 @@ body{
     align-items: center;
     background-color: white;
 }
+/* divs de la botonera */
+#botonera #x{
+    top:85px;
+    left:0;
+}
+#botonera #o{
+    top:28px;
+    left:37px;
+}
+#botonera #cuadrado{
+    top:9px;
+    left:-38px;
+}
+#botonera #triangulo{
+    top:-47px;
+    left:0;
+}
+#botonera #fondo{
+    position:relative;
+    width: 3cm;
+    height: 3cm;
+    top: 122px;
+    left: -57px;
+    border: 10px solid grey;
+    border-radius: 50%;
+}
+/* etiquetas de la botonera */
 #botonera .x{
-    font-size:18px;
+    font-size:15px;
+    top:0;
+    left:0;
 }
 #botonera .o{
-    font-size:13px;
+    font-size:10px;
+    margin-top: 3px;
 }
 #botonera .cuadrado{
-    font-size:13px;
+    font-size:10px;
     margin-top:3px;
 }
 #botonera .triangulo{
-    font-size:16px;
+    font-size:13px;
+    margin-top:-1px;
 }
