@@ -10,7 +10,7 @@ body{
     height:430px;
     background-color: #b1b1b1;
     border-radius: 195px;
-    box-shadow: 0  -7px 7px black;
+    box-shadow: 0 -17px 17px black;
 }
 #vita{
     display:flex;
@@ -165,7 +165,7 @@ body{
 }
 #botonera #triangulo{
     top: -60px;
-    left: -2px;
+    left: -4px;
     color:white;
     background: radial-gradient(#c8c8c8, black);
     border: 3px ridge rgb(118, 118, 118);
@@ -182,8 +182,6 @@ body{
 /* etiquetas de la botonera: posicionamiento */
 #botonera .x{
     font-size:15px;
-    top:0;
-    left:0;
 }
 #botonera .o{
     font-size:10px;
@@ -202,7 +200,7 @@ body{
     position:relative;
     width:40px;
     height:30px;
-    top: -49px;
+    top: -386px;
     left: 27px;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(3,1fr);
@@ -218,7 +216,7 @@ body{
     position:relative;
     width:40px;
     height:30px;
-    top: -79px;
+    top: -413px;
     left: 884px;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(3,1fr);
@@ -245,8 +243,10 @@ body{
 #vitaLogo img{
     width: 122px;
 }
+/* SVG escalado y posicionamiento */
 .svgArribaIzquierda{
     translate: 2px -1px;
+    
 }
 .svgArribaDerecha{
     translate: 345px -1px;
@@ -255,8 +255,10 @@ body{
 .svgAbajoIzquierda{
     translate: -607px 282px;
     transform: rotateX(180deg);
+    scale: 1.2;
 }
 .svgAbajoDerecha{
     translate: 653px 128px;
     transform: rotate(180deg);
+    scale: 1.2;
 }
