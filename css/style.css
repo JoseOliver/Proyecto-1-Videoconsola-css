@@ -8,17 +8,24 @@ body{
 #videoconsola{
     width:950px;
     height:430px;
-    background-color: darkgrey;
+    background-color: #b1b1b1;
     border-radius: 195px;
+    box-shadow: 0 -15px 12px black;
 }
 #vita{
+    display:flex;
     position: relative;
-    top: 0;
-    left: 0;
+    top: -274px;
+    left: 77px;
     width: 2cm;
     height: 1cm;
     border-radius: 50%;
-    background: lightblue;
+    background: #737373;
+    justify-content: center;
+    align-items: center;
+}
+#vita img{
+    width:47px;
 }
 #start{
     /* pongo el texto del boton centrado: "A" */
@@ -28,43 +35,44 @@ body{
     display: flex;               /* A */
     width: 10mm;                        /* B */ 
     height: 5mm;                        /* B */
-    top:0;                                      /* C */
-    left:0;                                     /* C */
+    top:-220px;                                 /* C */
+    left:784px;                                 /* C */
     border-radius: 50%;                 /* B */
-    background: red;
-    color:black;
+    background: #737373;
+    color:rgb(222, 222, 222);
     font-size:xx-small;                         /* C */
     justify-content:center;      /* A */
     align-items: center;         /* A */
 }
 #select{
-    position: relative;                         /* C */
-    display: flex;               /* A */
-    width: 10mm;                        /* B */ 
-    height: 5mm;                        /* B */
-    top:0;                                      /* C */
-    left:0;                                     /* C */
-    border-radius: 50%;                 /* B */
-    background: red;
-    color:black;
-    font-size:xx-small;                         /* C */
-    justify-content:center;      /* A */
-    align-items: center;         /* A */
+    position: relative;
+    display: flex;
+    width: 10mm;
+    height: 5mm;
+    top: -238px;
+    left: 839px;
+    border-radius: 50%;
+    background: #737373;
+    color:rgb(222, 222, 222);
+    font-size:xx-small;
+    justify-content:center;
+    align-items: center;
 }
 #cruceta{
     position:relative;
     float:left;
-    width: 45mm;
-    height: 45mm;
-    top: -3mm;
+    width: 44mm;
+    height: 44mm;
+    top: -90mm;
     left: 20mm;
 }
+/* divs de la cruceta */
 #cruceta .fondo{
     position:relative;
-    width: 3cm;
-    height: 3cm;
-    top: 117px;
-    left: -49px;
+    width: 28mm;
+    height: 29mm;
+    top: 115px;
+    left: -45px;
     border: 10px solid grey;
     border-radius: 50%;
 }
@@ -87,37 +95,40 @@ body{
 #joyL{
     position:relative;
     float:left;
-    width:2cm;
-    height:2cm;
-    top:7cm;
+    width: 15mm;
+    height: 15mm;
+    top:-21mm;
     left:-24mm;
     border-radius: 50%;
-    background-color: black;
+    background: linear-gradient(grey,black);
+    border: 7px solid grey;
 }
 #joyR{
     position:relative;
-    width:2cm;
-    height:2cm;
-    top: 7cm;
-    left: 21cm;
+    width: 15mm;
+    height: 15mm;
+    top: -21mm;
+    left: 212mm;
     border-radius: 50%;
-    background-color: black;
+    background: linear-gradient(grey,black);
+    border: 7px solid grey;
 }
 #pantalla{
     position:relative;
-    width: 16cm;
-    height: 10cm;
-    top: -8.3cm;
-    left: 4.5cm;
+    width: 153mm;
+    height: 92mm;
+    top: -193mm;
+    left: 50mm;
     background: linear-gradient(155deg,grey,black)
 }
 #botonera{
     position:relative;
     width: 5cm;
     height: 5cm;
-    top: -24mm;
+    top: -112mm;
     left: 224mm;
 }
+/* Comun a todos los botones */
 #botonera .boton{
     position:relative;
     width:10%;
@@ -128,24 +139,36 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: black;
 }
 /* divs de la botonera */
 #botonera #x{
-    top:85px;
-    left:0;
+    top: 80px;
+    left: -2px;
+    color:white;
+    background: radial-gradient(#c8c8c8, black);
+    border: 3px ridge rgb(118, 118, 118);
 }
 #botonera #o{
-    top:28px;
-    left:37px;
+    top: 22px;
+    left: 32px;
+    color:white;
+    background: radial-gradient(#c8c8c8, black);
+    border: 3px ridge rgb(118, 118, 118);
 }
 #botonera #cuadrado{
-    top:9px;
+    top:-2px;
     left:-38px;
+    color:white;
+    background: radial-gradient(#c8c8c8, black);
+    border: 3px ridge rgb(118, 118, 118);
 }
 #botonera #triangulo{
-    top:-47px;
-    left:0;
+    top: -60px;
+    left: -2px;
+    color:white;
+    background: radial-gradient(#c8c8c8, black);
+    border: 3px ridge rgb(118, 118, 118);
 }
 #botonera #fondo{
     position:relative;
@@ -153,10 +176,10 @@ body{
     height: 3cm;
     top: 122px;
     left: -57px;
-    border: 10px solid grey;
+    border:10px solid grey;
     border-radius: 50%;
 }
-/* etiquetas de la botonera */
+/* etiquetas de la botonera: posicionamiento */
 #botonera .x{
     font-size:15px;
     top:0;
@@ -173,4 +196,64 @@ body{
 #botonera .triangulo{
     font-size:13px;
     margin-top:-1px;
+}
+#audioL{
+    display:grid;
+    position:relative;
+    width:40px;
+    height:30px;
+    top: -49px;
+    left: 27px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+#audioL i{
+    font-size: 10px;
+}
+#audioL .inferior{
+    margin-left:3px;
+}
+#audioR{
+    display:grid;
+    position:relative;
+    width:40px;
+    height:30px;
+    top: -79px;
+    left: 884px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+#audioR i{
+    font-size: 10px;
+}
+#audioR .inferior{
+    margin-left:-3px;
+}
+#sonyLogo{
+    position:relative;
+    top: -650px;
+    left: 92px;
+}
+#sonyLogo img{
+    width: 80px;
+}
+#vitaLogo{
+    position:relative;
+    top: -340px;
+    left: 421px;
+}
+#vitaLogo img{
+    width: 122px;
+}
+.svgArribaDerecha{
+    translate: 347px 0;
+    transform: rotateY(180deg); 
+}
+.svgAbajoIzquierda{
+    translate: -607px 282px;
+    transform: rotateX(180deg);
+}
+.svgAbajoDerecha{
+    translate: 653px 128px;
+    transform: rotate(180deg);
 }
